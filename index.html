@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK Partizan stranica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 500px; 
+            object-fit: cover; 
+            object-position: center;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px; 
+            }
+        }
+
+        .custom-range::-webkit-slider-runnable-track {
+            background-color: #dee2e6;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        .custom-range::-moz-range-track {
+            background-color: #dee2e6;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        .custom-range::-webkit-slider-thumb {
+            background-color: #212529 !important;
+            margin-top: -4px;
+        }
+
+        .custom-range::-moz-range-thumb {
+            background-color: #212529 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Partizan site <span class="badge bg-danger">Live</span></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#pocetna">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galerija">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Club
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-dark" href="#kontakt">Memberships and tickets</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-dark" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">About us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="pocetna" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#pocetna" data-bs-slide-to="9"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanderbi1_small.jpg">
+                    <img src="slike/kkpartizanderbi1.jpg" class="d-block w-100" alt="Partizan Derbi 1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanderbi_small.jpg">
+                    <img src="slike/kkpartizanderbi.jpg" class="d-block w-100" alt="Partizan Derbi">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanteam1_small.jpg">
+                    <img src="slike/kkpartizanteam1.jpg" class="d-block w-100" alt="Partizan Tim 1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizangame1_small.jpg">
+                    <img src="slike/kkpartizangame1.jpg" class="d-block w-100" alt="Partizan Utakmica 1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizancarlik_small.jpg">
+                    <img src="slike/kkpartizancarlik.jpg" class="d-block w-100" alt="Karlik Dzons">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizangame_small.jpg">
+                    <img src="slike/kkpartizangame.jpg" class="d-block w-100" alt="Partizan Tekma">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanbrown1_small.jpg">
+                    <img src="slike/kkpartizanbrown1.jpg" class="d-block w-100" alt="Sterling Braun 1">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanbrown_small.jpg">
+                    <img src="slike/kkpartizanbrown.jpg" class="d-block w-100" alt="Sterling Braun">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanteam_small.jpg">
+                    <img src="slike/kkpartizanteam.jpg" class="d-block w-100" alt="Partizan Tim">
+                </picture>
+            </div>
+            <div class="carousel-item">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="slike/kkpartizanfans_small.jpg">
+                    <img src="slike/kkpartizanfans.jpg" class="d-block w-100" alt="Grobari Navijaci">
+                </picture>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#pocetna" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pocetna" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light p-2 rounded">
+                <li class="breadcrumb-item"><a href="#" class="text-dark">BC Partizan</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Fan Zone</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container my-5" id="galerija">
+        <h2 class="text-center mb-4">News about the Club</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Preparation for the Euroleague</h5>
+                        <p class="card-text">The team is putting in the work and analysing their opponents in the most elite European competition</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">Focus on defence</li>
+                            <li class="list-group-item">Transition three pointers</li>
+                        </ul>
+                        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#infoModal">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Support from the fans</h5>
+                        <p class="card-text">The fans are yet again preparing an excellent atmosphere and choreography for the next Euroleague derby</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">Tickets almost sold out</li>
+                            <li class="list-group-item">Please support your team in a sportsmanlike way</li>
+                        </ul>
+                        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#infoModal">Read more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Players statements</h5>
+                        <p class="card-text">Our guards emphasize that the team chemistry is at a high level and that they are ready to give 100%.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">Jones about the atmosphere</li>
+                            <li class="list-group-item">Brown about the form</li>
+                        </ul>
+                        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#infoModal">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 p-4 bg-light rounded border shadow-sm">
+        <h4 class="mb-3">Belgrade Arena Capacity for Next Game</h4>
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92% Sold Out</div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="faq">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        When do the gates open before the game?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        The gates of the Belgrade Arena usually open 2 hours before the tip-off.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Can I enter with a digital ticket on my phone?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Yes, digital tickets with a valid QR code can be scanned directly from your mobile device.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="kontakt">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                    <strong>Important note:</strong> Make sure all the input values are correct before submitting!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <h2 class="mb-4 text-center">Form for the fans</h2>
+
+                <form class="p-4 border rounded bg-light shadow-sm">
+                    <div class="mb-3">
+                        <label for="imePrezime" class="form-label" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your full legal name">Name and last name ℹ️</label>
+                        <input type="text" class="form-control" id="imePrezime" placeholder="Misa Savic" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="brojKarata" class="form-label">Amount of season tickets you want</label>
+                        <input type="number" class="form-control" id="brojKarata" min="1" max="5" value="1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="datumRodjenja" class="form-label">Date of birth</label>
+                        <input type="date" class="form-control" id="datumRodjenja">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="sektorArene" class="form-label">Select a sector of the Belgrade Arena</label>
+                        <select class="form-select" id="sektorArene">
+                            <option selected disabled>Choose a stand</option>
+                            <option value="1">Section 200</option>
+                            <option value="2">Section 400</option>
+                            <option value="3">The south sector</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <label for="budzetRaspon" class="form-label">Max budget for shopping</label>
+                            <span class="fw-bold" id="budzetVrednost">275 €</span>
+                        </div>
+                        <input type="range" class="form-range custom-range" min="50" max="500" step="25" id="budzetRaspon" value="275">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label d-block">Do you own a Partizan season ticket?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="clanstvoRadio" id="clanstvoDa" value="da">
+                            <label class="form-check-label" for="clanstvoDa">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="clanstvoRadio" id="clanstvoNe" value="ne" checked>
+                            <label class="form-check-label" for="clanstvoNe">No</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="obavestenjaCheck">
+                        <label class="form-check-label" for="obavestenjaCheck">I want to get notifications about matches via email</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="porukaKlubu" class="form-label">Additional questions or note</label>
+                        <textarea class="form-control" id="porukaKlubu" rows="4" placeholder="Type your comment here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark w-100">Send a request</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Notification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for using the official fan app!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Partizan BC fan site</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const raspon = document.getElementById('budzetRaspon');
+        const vrednost = document.getElementById('budzetVrednost');
+
+        raspon.addEventListener('input', (e) => {
+            vrednost.textContent = `${e.target.value} €`;
+        });
+    </script>
+</body>
+</html>
